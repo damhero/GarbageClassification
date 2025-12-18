@@ -1,5 +1,3 @@
-!pip uninstall -y opencv-python opencv-contrib-python opencv-python-headless && pip install -qU "opencv-python-headless==4.10.*" "numpy<2.0"
-!pip install -qU ultralytics --no-deps
 from ultralytics import YOLO
 # ^ fixing kaggle dependencies
 
