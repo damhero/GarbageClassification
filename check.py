@@ -49,7 +49,7 @@ print(f"Zdjęcia testowe: {test_images_dir}\n")
 
 # Zbieranie zdjęć
 image_files = list(Path(test_images_dir).glob("*.JPEG")) + \
-              list(Path(test_images_dir).glob("*.jpg")) + \
+              list(Path(test_images_dir).glob("*.jpeg")) + \
               list(Path(test_images_dir).glob("*.png"))
 
 print(f"Znaleziono {len(image_files)} zdjęć testowych\n")

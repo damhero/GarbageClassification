@@ -1,0 +1,33 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "BIODEGRADABLE"
+    },
+    {
+      "id": 1,
+      "name": "CARDBOARD"
+    },
+    {
+      "id": 2,
+      "name": "GLASS"
+    },
+    {
+      "id": 3,
+      "name": "METAL"
+    },
+    {
+      "id": 4,
+      "name": "PAPER"
+    },
+    {
+      "id": 5,
+      "name": "PLASTIC"
+    }
+  ],
+  "info": {
+    "year": 2026,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}

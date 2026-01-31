@@ -1,8 +1,30 @@
-Repozytorium dotyczące projektu detekcji odpadów. 
+# System Detekcji i Klasyfikacji Odpadów (YOLOv11) ♻️
 
-W pliku script.py znajduje się kod skryptu używany do trenowania modeli, należy zmienć w nim ścieżkę do pliku data.yaml
+Projekt zaliczeniowy z przedmiotu **Podstawy Reprezentacji i Analizy Danych (2025Z)**.
+Celem projektu jest automatyczne wykrywanie i klasyfikacja odpadów na zdjęciach przy użyciu sieci neuronowych YOLO (v11n, v11s, v11m).
 
-Modele trenowane są na image size 640x640, 100 epochs, patience 10.
+## 👥 Autorzy
+* Damian Brudkowski
+* Cyprian Ciesielski
+* Wojciech Ziembowicz
 
-Kaggle free cloud compute GPU P100 30h/week
-W pliku script.py są naprawione importy bibliotek, ponieważ kaggle ma automatycznie niekompatybilne opencv oraz numpy, wszystkie zdjęcia w katalogu dataset są poprawne.
+## 🎯 Główne funkcjonalności
+* **Analiza Eksploracyjna (EDA):** Badanie struktury i balansu zbioru *Garbage Classification 3*.
+* **Trening Modeli:** Porównanie wydajności architektur YOLO11 **Nano, Small i Medium**.
+* **Walidacja:** Analiza metryk mAP, Precision, Recall oraz macierzy pomyłek.
+* **Testy "In-the-wild":** Weryfikacja działania modelu na autorskim zbiorze zdjęć wykonanych smartfonem w warunkach domowych (uwzględniająca analizę *Domain Shift*).
+
+## 📂 Struktura klas
+Model rozpoznaje 5 klas odpadów:
+1. `BIODEGRADABLE` (Bio)
+2. `GLASS` (Szkło)
+3. `METAL` (Metal)
+4. `PAPER` (Papier/Karton)
+5. `PLASTIC` (Plastik)
+
+## 🚀 Jak uruchomić projekt
+
+### Wymagania
+Projekt wymaga środowiska Python (rekomendowane 3.8+) oraz bibliotek:
+```bash
+pip install ultralytics pandas matplotlib seaborn opencv-python tqdm notebook
